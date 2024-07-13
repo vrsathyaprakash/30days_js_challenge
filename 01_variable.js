@@ -12,5 +12,7 @@ const isObj ={ "name":"prakash","year":1992}
 console.log(isObj)
 console.log(typeof(isObj))
 
+sathya = "prakash"
+console.log(sathya)
 //isGood = false
 //console.log(isGood)
