@@ -14,7 +14,12 @@ function div(a,b){
     console.log(a/b)
 }
 
+function remainder(a,b){
+    console.log(a%b)
+}
+
 add(4,5)
 sub(4,5)
 mul(4,5)
 div(4,8)
+remainder(5,4)
