@@ -1,5 +1,4 @@
-function dayOfWeeek(day){
-    switch(day){
+switch(day){
         case 1:
             console.log("Monday")
             break;
@@ -23,7 +22,6 @@ function dayOfWeeek(day){
             break;
         
     }
-}
 
 
 dayOfWeeek(7)
