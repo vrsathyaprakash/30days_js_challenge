@@ -23,7 +23,3 @@ switch(day){
         
     }
 
-
-dayOfWeeek(7)
-dayOfWeeek(4)
-dayOfWeeek(3)
