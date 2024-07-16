@@ -6,7 +6,7 @@ for (let i=1;i<=10;i++){
     }
 }
 
-console.log('*'.repeat(20))
+console.log('*'.repeat(30))
 
 for (let i=1;i<=10;i++){
     if(i==7){
