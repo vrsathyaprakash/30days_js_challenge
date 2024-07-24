@@ -7,6 +7,7 @@ document.querySelector(".content").innerText= `Challenge about dom manipulation 
 
  //ceate a new div element
  const newdev = document.createElement('div')
+ newdev.id='new-ele'
  const text=document.createTextNode("new div elemnt inside  a body element")
  newdev.appendChild(text)
  document.body.append(newdev)
@@ -34,3 +35,10 @@ image.src= "react.png"
 //to add and remove class element
 list.classList.add('bkg')
 list.classList.remove('bkg')
+
+//add event listener to a button
+const newEle=document.getElementById('new-ele')
+const chBtn= document.getElementById('change')
+chBtn.addEventListener('click',()=>{
+       newEle.innerText="content changes when button is clicked"
+})
