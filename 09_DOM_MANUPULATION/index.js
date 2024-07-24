@@ -42,3 +42,8 @@ const chBtn= document.getElementById('change')
 chBtn.addEventListener('click',()=>{
        newEle.innerText="content changes when button is clicked"
 })
+
+chBtn.addEventListener('mouseover',()=>{
+    chBtn.style.borderWidth='5px'
+    chBtn.style.borderColor='blue'
+})
