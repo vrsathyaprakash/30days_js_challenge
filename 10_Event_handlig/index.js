@@ -7,6 +7,7 @@ const defaultForm = document.getElementById("default")
 const selectEle = document.getElementById('options')
 const selectLang = document.getElementById('select-item')
 const listEle = document.getElementById('lists')
+const listLang = document.getElementById('list-item')
 
 
 chBtn.addEventListener('click',()=>{
@@ -53,10 +54,13 @@ selectEle.addEventListener('change',(e)=>{
      selectLang.innerText =`selected language is  ${e.target.value}`
 })
 
-
+//element delegation
 listEle.addEventListener('click',(e)=>{
    if(e.target.tagName === 'LI'){
-      console.log(e.target.innerText)
+      listLang.innerText=`select list language is ${e.target.innerText}`
    }
 }) 
+
+
+
    
