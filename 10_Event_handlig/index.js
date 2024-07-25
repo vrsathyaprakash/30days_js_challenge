@@ -6,6 +6,8 @@ const sbtBtn = document.getElementById("sbt-btn")
 const defaultForm = document.getElementById("default")
 const selectEle = document.getElementById('options')
 const selectLang = document.getElementById('select-item')
+const listEle = document.getElementById('lists')
+
 
 chBtn.addEventListener('click',()=>{
     chPara.innerText=`The tax rates have been adjusted. Previously, there was no tax on income up to ₹3 lakhs, 
@@ -50,3 +52,11 @@ defaultForm.addEventListener('submit',(e)=>{
 selectEle.addEventListener('change',(e)=>{
      selectLang.innerText =`selected language is  ${e.target.value}`
 })
+
+
+listEle.addEventListener('click',(e)=>{
+   if(e.target.tagName === 'LI'){
+      console.log(e.target.innerText)
+   }
+}) 
+   
