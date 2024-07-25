@@ -39,8 +39,3 @@ chInput.addEventListener('keyup',(e)=>{
    chEvent.innerText +=`${e.code}`
 })
 
-defaultForm.addEventListener('submit',(e)=>{
-   e.preventDefault();
-   console.log(defaultForm.values())
-}
-)
