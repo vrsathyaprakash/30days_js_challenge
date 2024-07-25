@@ -2,6 +2,8 @@ const chBtn=document.getElementById("change")
 const chPara=document.getElementById("change-para")
 const chInput = document.getElementById("keyinput")
 const chEvent = document.getElementById("keyevent")
+const sbtBtn = document.getElementById("sbt-btn")
+const defaultForm =document.getElementById("default")
 
 
 chBtn.addEventListener('click',()=>{
@@ -32,3 +34,13 @@ chBtn.addEventListener('mouseout',()=>{
 chInput.addEventListener('keydown',(e)=>{
    chEvent.innerText +=`${e.code}`
 })
+
+chInput.addEventListener('keyup',(e)=>{
+   chEvent.innerText +=`${e.code}`
+})
+
+defaultForm.addEventListener('submit',(e)=>{
+   e.preventDefault();
+   console.log(defaultForm.values())
+}
+)
