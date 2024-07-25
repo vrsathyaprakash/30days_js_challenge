@@ -1,10 +1,11 @@
-const chBtn=document.getElementById("change")
-const chPara=document.getElementById("change-para")
+const chBtn= document.getElementById("change")
+const chPara= document.getElementById("change-para")
 const chInput = document.getElementById("keyinput")
 const chEvent = document.getElementById("keyevent")
 const sbtBtn = document.getElementById("sbt-btn")
-const defaultForm =document.getElementById("default")
-
+const defaultForm = document.getElementById("default")
+const selectEle = document.getElementById('options')
+const selectLang = document.getElementById('select-item')
 
 chBtn.addEventListener('click',()=>{
     chPara.innerText=`The tax rates have been adjusted. Previously, there was no tax on income up to ₹3 lakhs, 
@@ -39,3 +40,13 @@ chInput.addEventListener('keyup',(e)=>{
    chEvent.innerText +=`${e.code}`
 })
 
+defaultForm.addEventListener('submit',(e)=>{
+   e.preventDefault();
+   //you can see console values in right click inspect elemnt on live server
+   console.log(document.getElementById('fname').value)
+   console.log(document.getElementById('lname').value)
+})
+
+selectEle.addEventListener('change',(e)=>{
+     selectLang.innerText =`selected language is  ${e.target.value}`
+})

@@ -7,13 +7,23 @@
     <title>Event Handling</title>
 </head>
 <body>
-    <form action="" method="post" default">
+    <form action=""  id="default">
         <label for="fname">First name:
         <input type="text" id="fname" class="myname" name="fname" value="John"></label><br>
         <label for="lname">Last name:
         <input type="text" id="lname" class="myname" name="lname" value="Doe"></label><br>
         <input type="submit" value="Submit" id="sbt-btn">
-      </form> 
+      </form>
+      
+    <select id="options">
+        <option value="none">none</option>
+        <option value="java">java</option>
+        <option value="javascript">java script</option>
+        <option value="python">python</option>
+        <option value="C">C</option>
+    </select>
+    <div id="select-item">Selected languae is</div>
+
     <input id="keyinput" placeholder="learn key event Handling"/>
     <div id="keyevent"></div>
     <p id="change-para">Third, you can save taxes by claiming deductions on the contribution your employer 
